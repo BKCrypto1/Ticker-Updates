@@ -98,12 +98,12 @@
             function updateDashboard(mainColWidth, mainCurrencies, otherColWidth, otherCurrencies) {
                 $('.main-row').html('');
                 for (var i = 0; i < mainCurrencies.length; i++) {
-                    $('.main-row').append('<div class="coinmarketcap-currency-widget col-md-' + mainColWidth + '" data-currency="' + mainCurrencies[i] + '" data-base="USD" data-secondary="USD" data-ticker="true" data-rank="true" data-marketcap="true" data-volume="true" data-stats="USD" data-statsticker="false"></div>');
+                    $('.main-row').append('<div class="coinmarketcap-currency-widget col-md-' + mainColWidth + '" data-currency="' + mainCurrencies[i] + '" data-base="USD" data-secondary="BTC" data-ticker="true" data-rank="true" data-marketcap="true" data-volume="true" data-stats="USD" data-statsticker="false"></div>');
                 }
 
                 $('.other-row').html('');
                 for (var i = 0; i < otherCurrencies.length; i++) {
-                    $('.other-row').append('<div class="coinmarketcap-currency-widget col-md-' + otherColWidth + '" data-currency="' + otherCurrencies[i] + '" data-base="USD" data-secondary="USD" data-ticker="true" data-rank="true" data-marketcap="true" data-volume="true" data-stats="USD" data-statsticker="false"></div>');
+                    $('.other-row').append('<div class="coinmarketcap-currency-widget col-md-' + otherColWidth + '" data-currency="' + otherCurrencies[i] + '" data-base="USD" data-secondary="BTC" data-ticker="true" data-rank="true" data-marketcap="true" data-volume="true" data-stats="USD" data-statsticker="false"></div>');
                 }
 
                 $('#cmc-script').replaceWith('<script id="cmc-script" type="text/javascript" src="' + $('#cmc-script').prop('src') + '"><\/script>');
@@ -138,11 +138,11 @@
 
                 window.setInterval(function(){
                     updateMyCurrencies(myCurrencies);
-                }, 60000);
+                }, 300000);
 
                 window.setInterval(function(){
                     updateDashboard(mainColWidth, mainCurrencies, otherColWidth, otherCurrencies);
-                }, 300000);
+                }, 60000);
                 
             });
            
