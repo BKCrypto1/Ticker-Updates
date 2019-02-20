@@ -36,7 +36,11 @@
 
 <body onload = "JavaScript:AutoRefresh(60000);">  <!-- 60 second refresh  -->
 <script type="text/javascript" src="https://files.bitscreener.com/js/widget.min.js"></script>
-<h2>BKCrypto Price Ticker</h2>
+<p align="left"><h2>BKCrypto Price Ticker</h2> (Last Updated: <span id="datetime"></span>)</p>
+<script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleString();
+</script>
 
 <table align="center">
 <tbody>
@@ -110,10 +114,5 @@
 <div class="bitscreener-widget column center" data-currency="condominium"></div>
 <div class="bitscreener-widget column right" data-currency="xtrabytes"></div>
 
-<p align="center">Last Updated: <span id="datetime"></span></p>
-<script>
-var dt = new Date();
-document.getElementById("datetime").innerHTML = dt.toLocaleString();
-</script>
 </body>
 </html>
