@@ -1,11 +1,38 @@
 <html>
 	<head>
 		<title>BKCrypto Price Ticker</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left, .right {
+  width: 32%;
+}
+
+.middle {
+  width: 32%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
 	</head>
 <body>
 <script type="text/javascript" src="https://files.bitscreener.com/js/widget.min.js"></script>
-<div style="text-align: center; padding: 20px 0px; width: 33%; float: left" class="bitscreener-widget" data-currency="bitcoin"></div>
-<div style="text-align: center; padding: 20px 0px; width: 33%; float: right" class="bitscreener-widget" data-currency="campuscoin"></div>
-<!-- <div style="text-align: center; padding: 20px 0px; width: 33%;" class="bitscreener-widget" data-currency="phonecoin"></div> -->
+<div class="bitscreener-widget column left" data-currency="bitcoin"></div>
+<div class="bitscreener-widget column center" data-currency="campuscoin"></div>
+<div class="bitscreener-widget column right" data-currency="phonecoin"></div> -->
 </body>
 </html>
