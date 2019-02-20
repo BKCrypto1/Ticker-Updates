@@ -37,12 +37,6 @@
 <body onload = "JavaScript:AutoRefresh(60000);">  <!-- 60 second refresh  -->
 <script type="text/javascript" src="https://files.bitscreener.com/js/widget.min.js"></script>
 <h2>BKCrypto Price Ticker</h2>
-<div class="bitscreener-widget column left" data-currency="bitcoin"></div>
-<div class="bitscreener-widget column center" data-currency="campuscoin"></div>
-<div class="bitscreener-widget column right" data-currency="phonecoin"></div>
-<div class="bitscreener-widget column left" data-currency="birake"></div>
-<div class="bitscreener-widget column center" data-currency="condominium"></div>
-<div class="bitscreener-widget column right" data-currency="xtrabytes"></div>
 
 <table align="center">
 <tbody>
@@ -58,7 +52,7 @@
   new TradingView.widget(
   {
   "width": 610,
-  "height": 350,
+  "height": 200,
   "symbol": "BITFINEX:BTCUSD",
   "interval": "D",
   "timezone": "Etc/UTC",
@@ -88,7 +82,7 @@
   new TradingView.widget(
   {
   "width": 610,
-  "height": 350,
+  "height": 200,
   "symbol": "COINBASE:LTCUSD",
   "interval": "D",
   "timezone": "Etc/UTC",
@@ -109,7 +103,12 @@
 </tr>
 </tbody>
 </table>
-
+<div class="bitscreener-widget column left" data-currency="bitcoin"></div>
+<div class="bitscreener-widget column center" data-currency="campuscoin"></div>
+<div class="bitscreener-widget column right" data-currency="phonecoin"></div>
+<div class="bitscreener-widget column left" data-currency="birake"></div>
+<div class="bitscreener-widget column center" data-currency="condominium"></div>
+<div class="bitscreener-widget column right" data-currency="xtrabytes"></div>
 
 <p align="center">Last Updated: <span id="datetime"></span></p>
 <script>
