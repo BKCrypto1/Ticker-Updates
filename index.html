@@ -40,17 +40,17 @@
 <div class="bitscreener-widget column left" data-currency="bitcoin"></div>
 <div class="bitscreener-widget column center" data-currency="campuscoin"></div>
 <div class="bitscreener-widget column right" data-currency="phonecoin"></div>
-<center>
+
 <!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-  <div id="tradingview_2990d"></div>
+<div class="tradingview-widget-container column left">
+  <div id="tradingview_34369"></div>
   <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/BITFINEX-BTCUSD/" rel="noopener" target="_blank"><span class="blue-text">BTCUSD chart</span></a> by TradingView</div>
   <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
   <script type="text/javascript">
   new TradingView.widget(
   {
-  "width": 920,
-  "height": 500,
+  "width": 700,
+  "height": 400,
   "symbol": "BITFINEX:BTCUSD",
   "interval": "D",
   "timezone": "Etc/UTC",
@@ -61,13 +61,38 @@
   "enable_publishing": false,
   "hide_top_toolbar": true,
   "save_image": false,
-  "container_id": "tradingview_2990d"
+  "container_id": "tradingview_34369"
+}
+  );
+  </script>
+</div>
+
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container column right">
+  <div id="tradingview_a7616"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/COINBASE-LTCUSD/" rel="noopener" target="_blank"><span class="blue-text">LTCUSD chart</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+  new TradingView.widget(
+  {
+  "width": 700,
+  "height": 400,
+  "symbol": "COINBASE:LTCUSD",
+  "interval": "D",
+  "timezone": "Etc/UTC",
+  "theme": "Dark",
+  "style": "1",
+  "locale": "en",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": false,
+  "hide_top_toolbar": true,
+  "save_image": false,
+  "container_id": "tradingview_a7616"
 }
   );
   </script>
 </div>
 <!-- TradingView Widget END -->
-</center>
 
 
 <p align="center">Last Updated: <span id="datetime"></span></p>
