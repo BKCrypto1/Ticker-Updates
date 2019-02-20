@@ -36,17 +36,12 @@
 
 <body onload = "JavaScript:AutoRefresh(60000);">  <!-- 60 second refresh  -->
 <script type="text/javascript" src="https://files.bitscreener.com/js/widget.min.js"></script>
-<h2>BKCrypto Price Ticker</h2> (Last Updated: <span id="datetime"></span>)
-<script>
-var dt = new Date();
-document.getElementById("datetime").innerHTML = dt.toLocaleString();
-</script>
-
+<h2>BKCrypto Price Ticker</h2>
+<!-- Trading View Graphs 
 <table align="center">
 <tbody>
 <tr>
 <td>
-<!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
   <div id="tradingview_3ed84"></div>
   <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/BITFINEX-BTCUSD/" rel="noopener" target="_blank">
@@ -72,11 +67,9 @@ document.getElementById("datetime").innerHTML = dt.toLocaleString();
   );
   </script>
 </div>
-<!-- TradingView Widget END -->
 </td>
 
 <td>
-<!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
   <div id="tradingview_0d56e"></div>
   <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/COINBASE-LTCUSD/" rel="noopener" target="_blank"></a>
@@ -102,11 +95,12 @@ document.getElementById("datetime").innerHTML = dt.toLocaleString();
   );
   </script>
 </div>
-<!-- TradingView Widget END -->
 </td>
 </tr>
 </tbody>
 </table>
+-->
+
 <div class="bitscreener-widget column left" data-currency="bitcoin"></div>
 <div class="bitscreener-widget column center" data-currency="campuscoin"></div>
 <div class="bitscreener-widget column right" data-currency="phonecoin"></div>
@@ -114,5 +108,10 @@ document.getElementById("datetime").innerHTML = dt.toLocaleString();
 <div class="bitscreener-widget column center" data-currency="condominium"></div>
 <div class="bitscreener-widget column right" data-currency="xtrabytes"></div>
 
+<p align="center">Last Updated: <span id="datetime"></span></p>
+<script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleString();
+</script>
 </body>
 </html>
