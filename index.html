@@ -34,11 +34,18 @@
 
 	</head>
 
-<body onload = "JavaScript:AutoRefresh(5000);">  <!-- 5 second refresh  -->
+<body onload = "JavaScript:AutoRefresh(60000);">  <!-- 60 second refresh  -->
 <script type="text/javascript" src="https://files.bitscreener.com/js/widget.min.js"></script>
+<h2>BKCrypto Price Ticker for some Favorite Coins </h2>
 <div class="bitscreener-widget column left" data-currency="bitcoin"></div>
 <div class="bitscreener-widget column center" data-currency="campuscoin"></div>
 <div class="bitscreener-widget column right" data-currency="phonecoin"></div>
+<br />
+<p align="center">Last Updated: <span id="datetime"></span></p>
 
+<script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleString();
+</script>
 </body>
 </html>
